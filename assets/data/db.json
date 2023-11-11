@@ -1,0 +1,339 @@
+{
+  "house": [
+    {
+      "id": 1,
+      "name": "Gryffindor",
+      "founder":"Godric Gryffindor",
+      "animal" : "Lion",
+      "houseColor" : "Scarlet and gold",
+      "element" : "Fire",
+      "traits": [
+        "Daring",
+        "Courage",
+        "Bravery"
+      ],
+      "head" : "Minerva McGonagall",
+      "ghost" : "Nearly-Headless Nick",
+      "commonRoom": "Gryffindor Tower",
+      "magicalObjects" : "The Sword of Godric Gryffindor",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/G.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Hufflepuff",
+      "founder":"Helga Hufflepuff",
+      "animal" : "Badger",
+      "houseColor" : "Yellow and black",
+      "element" : "Earth",
+      "traits": [
+        "Hard-working",
+        "Patience",
+        "Fairness"
+      ],
+      "head" : "Pomona Sprout",
+      "ghost" : "Fat Friar",
+      "commonRoom": "Hufflepuff Basement",
+      "magicalObjects" : "The Cup of Hufflepuff",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/H.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ravenclaw",
+      "founder":"Rowena Ravenclaw",
+      "animal" : "Eagle",
+      "houseColor" : "Blue and bronze",
+      "element" : "Air",
+      "traits": [
+        "Learning",
+        "Intelligence",
+        "Creativity"
+      ],
+      "head" : "Filius Flitwick",
+      "ghost" : "Grey Lady",
+      "commonRoom": "Ravenclaw Tower",
+      "magicalObjects" : "Rowena Ravenclaw’s Diadem",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/R.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Slytherin",
+      "founder":"Salazar Slytherin",
+      "animal" : "Serpent",
+      "houseColor" : "Green and silver",
+      "element" : "Water",
+      "traits": [
+        "Cunning",
+        "Ambition",
+        "Self-preservation"
+      ],
+      "head" : "Severus Snape",
+      "ghost" : "Bloody Baron",
+      "commonRoom": "Slytherin Dungeon",
+      "magicalObjects" : "The Locket Of Slytherin",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/S.jpg"
+    }
+  ],
+  "professor": [
+    {
+      "id": 1,
+      "name": "Albus Percival Wulfric Brian Dumbledore",
+      "professor": "Headmaster",
+      "bloodStatus":"Half-blood",
+      "house" : "Gryffindor",
+      "born" : "Between 16 and 31 August 1881 Mould-on-the-Wold",
+      "patronus" : "Phoenix",
+      "boggart" : "The corpse of his sister, Ariana",
+      "wand": "15\", Elder, Thestral tail hair core",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Dumbledore.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Minerva McGonagall",
+      "professor": "Transfiguration",
+      "bloodStatus":"Half-blood",
+      "house" : "Gryffindor",
+      "born" : "4 October Caithness, Scotland",
+      "patronus" : "Cat",
+      "boggart" : "Lord Voldemort",
+      "wand": "9½\", Fir, dragon heartstring",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/McGonagall.jpg"
+
+    },
+    {
+      "id": 3,
+      "name": "Severus Snape",
+      "professor": "Potions",
+      "bloodStatus":"Half-blood",
+      "house" : "Slytherin",
+      "born" : "9 January 1960 Spinner's End, Cokeworth, Midlands",
+      "patronus" : "Doe",
+      "boggart" : "Lord Voldemort",
+      "wand": "Unknown length, wood and core",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Snape.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Rubeus Hagrid",
+      "professor": "Care of Magical Creatures",
+      "bloodStatus":"Half-breed (half-human/half-giant)",
+      "house" : "Gryffindor",
+      "born" : "6 December 1928 Forest of Dean",
+      "patronus" : "-",
+      "boggart" : "Lord Voldemort",
+      "wand": "16\", oak",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Hagrid.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Filius Flitwick",
+      "professor": "Charms",
+      "bloodStatus":"Half-breed (part-human/part-goblin)",
+      "house" : "Ravenclaw",
+      "born" : "17 October in or before 1958",
+      "patronus" : "Non-corporeal",
+      "boggart" : "Lord Voldemort",
+      "wand": "Unknown length, wood and core",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Flitwick.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Pomona Sprout",
+      "professor": "Herbology",
+      "bloodStatus":"Pure-blood or half-blood",
+      "house" : "Hufflepuff",
+      "born" : "15 May",
+      "patronus" : "Non-corporeal",
+      "boggart" : "Lord Voldemort",
+      "wand": "Unknown length, wood and core",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Sprout.jpg"
+    }
+  ],
+  "student": [
+    {
+      "id": 1,
+      "name": "Harry James Potter",
+      "bloodStatus":"Half-blood",
+      "house" : "Gryffindor",
+      "born" : "31 July 1980 Godric's Hollow",
+      "alsoKnownAs": [
+        "The Boy Who Lived",
+        "The Chosen One"
+      ],
+      "patronus" : "Stag",
+      "boggart" : "Dementor",
+      "wand": "11\",Holly, phoenix feather",
+      "image":"https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/harrypotter.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Hermione Jean Granger",
+      "bloodStatus":"Muggle-born",
+      "house" : "Gryffindor",
+      "born" : "19 September 1979 Great Britain",
+      "alsoKnownAs": [
+        "Hermy"
+      ],
+      "patronus" : "Otter",
+      "boggart" : "Failure",
+      "wand": "10¾\", Vine, dragon heartstring",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Hermione.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ronald Bilius Weasley",
+      "bloodStatus":"Pure-blood",
+      "house" : "Gryffindor",
+      "born" : "1 March 1980 Ottery St Catchpole",
+      "alsoKnownAs": [
+        "Ickle Ronnikins",
+        "Won-Won",
+        "Weasel"
+      ],
+      "patronus" : "Jack Russell terrier",
+      "boggart" : "Aragog",
+      "wand": "14\", Willow, unicorn tail hair",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/RonWeasley.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Draco Lucius Malfoy",
+      "bloodStatus":"Pure-blood",
+      "house" : "Slytherin",
+      "born" : "5 June 1980 Great Britain" ,
+      "alsoKnownAs": [ ],
+      "patronus" : "-",
+      "boggart" : "Lord Voldemort",
+      "wand": "10\", Hawthorn, unicorn hair",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Malfoy.jpg"
+
+    },
+    {
+      "id": 5,
+      "name": "Luna Scamander (née Lovegood)",
+      "bloodStatus":"Pure-blood or half-blood",
+      "house" : "Ravenclaw",
+      "born" : "13 February 1981 Great Britain",
+      "alsoKnownAs": [
+        "Loony Lovegood"
+      ],
+      "patronus" : "Hare",
+      "boggart" : "-",
+      "wand": "Unknown length, wood and core",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Luna.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Cedric Diggory",
+      "bloodStatus":"Pure-blood or half-blood",
+      "house" : "Hufflepuff",
+      "born" : "Between 1 September and 30 October 1977",
+      "alsoKnownAs": [
+        "Ced"
+      ],
+      "patronus" : "-",
+      "boggart" : "Lord Voldemort",
+      "wand": "12¼\", Ash, Unicorn hair",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Cedric.jpg"
+    }
+  ],
+  "wand": [
+    {
+      "core": "Dragon Heartstring",
+      "wood": [
+        "Vine",
+        "Walnut",
+        "Hornbeam",
+        "Cherry",
+        "Elm",
+        "Fir",
+        "Chestnut",
+        "Birch",
+        "Cedar",
+        "Maple",
+        "Willow",
+        "Apple",
+        "Beech"
+      ],
+      "length": [
+        "10¾\"",
+        "12¾\"",
+        "10¼\"",
+        "9\"",
+        "9½\"",
+        "9¼\"",
+        "8\"",
+        "10\"",
+        "12½\""
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/DragonHeartstring.jpg"
+    },
+    {
+      "core": "Phoenix Feather",
+      "wood": [
+        "Holly",
+        "Yew",
+        "Whippy",
+        "Larch"
+      ],
+      "length": [
+        "11\"",
+        "13½\"",
+        "11½\"\"",
+        "10½\""
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/PhoenixFeather.jpg"
+    },
+    {
+      "core": "Unicorn Tail Hair",
+      "wood": [
+        "Cherry",
+        "Ash",
+        "Cypress",
+        "Hawthorn",
+        "Alder",
+        "Willow"
+      ],
+      "length": [
+        "8¾\"",
+        "12¼\"",
+        "10¼\"",
+        "10\"",
+        "9\"",
+        "9½\"",
+        "12\"",
+        "14\""
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/UnicornTailHair.jpg"
+    },
+    {
+      "core": "Veela Hair",
+      "wood": [
+        "Rosewood"
+      ],
+      "length": [
+        "9½\""
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/VeelaHair.jpg"
+    },
+    {
+      "core": "Thestral Tail Hair",
+      "wood": [
+        "Elder"
+      ],
+      "length": [
+        "15\""
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/ThestralTailHair.jpg"
+    },
+    {
+      "core": "Basilisk Horn",
+      "wood": [
+        "Snakewood"
+      ],
+      "length": [
+        "-"
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/BasiliskHorn.jpg"
+    }
+  ]
+}

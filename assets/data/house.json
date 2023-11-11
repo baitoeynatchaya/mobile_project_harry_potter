@@ -1,0 +1,76 @@
+{
+  "house": [
+    {
+      "id": 1,
+      "name": "Gryffindor",
+      "founder":"Godric Gryffindor",
+      "animal" : "Lion",
+      "houseColor" : "Scarlet and gold",
+      "element" : "Fire",
+      "traits": [
+        "Daring",
+        "Courage",
+        "Bravery"
+      ],
+      "head" : "Minerva McGonagall",
+      "ghost" : "Nearly-Headless Nick",
+      "commonRoom": "Gryffindor Tower",
+      "magicalObjects" : "The Sword of Godric Gryffindor",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/G.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Hufflepuff",
+      "founder":"Helga Hufflepuff",
+      "animal" : "Badger",
+      "houseColor" : "Yellow and black",
+      "element" : "Earth",
+      "traits": [
+        "Hard-working",
+        "Patience",
+        "Fairness"
+      ],
+      "head" : "Pomona Sprout",
+      "ghost" : "Fat Friar",
+      "commonRoom": "Hufflepuff Basement",
+      "magicalObjects" : "The Cup of Hufflepuff",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/H.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ravenclaw",
+      "founder":"Rowena Ravenclaw",
+      "animal" : "Eagle",
+      "houseColor" : "Blue and bronze",
+      "element" : "Air",
+      "traits": [
+        "Learning",
+        "Intelligence",
+        "Creativity"
+      ],
+      "head" : "Filius Flitwick",
+      "ghost" : "Grey Lady",
+      "commonRoom": "Ravenclaw Tower",
+      "magicalObjects" : "Rowena Ravenclaw’s Diadem",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/R.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Slytherin",
+      "founder":"Salazar Slytherin",
+      "animal" : "Serpent",
+      "houseColor" : "Green and silver",
+      "element" : "Water",
+      "traits": [
+        "Cunning",
+        "Ambition",
+        "Self-preservation"
+      ],
+      "head" : "Severus Snape",
+      "ghost" : "Bloody Baron",
+      "commonRoom": "Slytherin Dungeon",
+      "magicalObjects" : "The Locket Of Slytherin",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/S.jpg"
+    }
+  ]
+}

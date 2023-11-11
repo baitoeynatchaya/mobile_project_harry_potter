@@ -1,0 +1,90 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "name": "Harry James Potter",
+      "bloodStatus":"Half-blood",
+      "house" : "Gryffindor",
+      "born" : "31 July 1980 Godric's Hollow",
+      "alsoKnownAs": [
+        "The Boy Who Lived",
+        "The Chosen One"
+      ],
+      "patronus" : "Stag",
+      "boggart" : "Dementor",
+      "wand": "11\",Holly, phoenix feather",
+      "image":"https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/harrypotter.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Hermione Jean Granger",
+      "bloodStatus":"Muggle-born",
+      "house" : "Gryffindor",
+      "born" : "19 September 1979 Great Britain",
+      "alsoKnownAs": [
+        "Hermy"
+      ],
+      "patronus" : "Otter",
+      "boggart" : "Failure",
+      "wand": "10¾\", Vine, dragon heartstring",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Hermione.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ronald Bilius Weasley",
+      "bloodStatus":"Pure-blood",
+      "house" : "Gryffindor",
+      "born" : "1 March 1980 Ottery St Catchpole",
+      "alsoKnownAs": [
+        "Ickle Ronnikins",
+        "Won-Won",
+        "Weasel"
+      ],
+      "patronus" : "Jack Russell terrier",
+      "boggart" : "Aragog",
+      "wand": "14\", Willow, unicorn tail hair",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/RonWeasley.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Draco Lucius Malfoy",
+      "bloodStatus":"Pure-blood",
+      "house" : "Slytherin",
+      "born" : "5 June 1980 Great Britain" ,
+      "alsoKnownAs": [ ],
+      "patronus" : "-",
+      "boggart" : "Lord Voldemort",
+      "wand": "10\", Hawthorn, unicorn hair",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Malfoy.jpg"
+
+    },
+    {
+      "id": 5,
+      "name": "Luna Scamander (née Lovegood)",
+      "bloodStatus":"Pure-blood or half-blood",
+      "house" : "Ravenclaw",
+      "born" : "13 February 1981 Great Britain",
+      "alsoKnownAs": [
+        "Loony Lovegood"
+    ],
+      "patronus" : "Hare",
+      "boggart" : "-",
+      "wand": "Unknown length, wood and core",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Luna.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Cedric Diggory",
+      "bloodStatus":"Pure-blood or half-blood",
+      "house" : "Hufflepuff",
+      "born" : "Between 1 September and 30 October 1977",
+      "alsoKnownAs": [
+        "Ced"
+      ],
+      "patronus" : "-",
+      "boggart" : "Lord Voldemort",
+      "wand": "12¼\", Ash, Unicorn hair",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Cedric.jpg"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "professor": [
+    {
+      "id": 1,
+      "name": "Albus Percival Wulfric Brian Dumbledore",
+      "professor": "Headmaster",
+      "bloodStatus":"Half-blood",
+      "house" : "Gryffindor",
+      "born" : "Between 16 and 31 August 1881 Mould-on-the-Wold",
+      "patronus" : "Phoenix",
+      "boggart" : "The corpse of his sister, Ariana",
+      "wand": "15\", Elder, Thestral tail hair core",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Dumbledore.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Minerva McGonagall",
+      "professor": "Transfiguration",
+      "bloodStatus":"Half-blood",
+      "house" : "Gryffindor",
+      "born" : "4 October Caithness, Scotland",
+      "patronus" : "Cat",
+      "boggart" : "Lord Voldemort",
+      "wand": "9½\", Fir, dragon heartstring",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/McGonagall.jpg"
+
+    },
+    {
+      "id": 3,
+      "name": "Severus Snape",
+      "professor": "Potions",
+      "bloodStatus":"Half-blood",
+      "house" : "Slytherin",
+      "born" : "9 January 1960 Spinner's End, Cokeworth, Midlands",
+      "patronus" : "Doe",
+      "boggart" : "Lord Voldemort",
+      "wand": "Unknown length, wood and core",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Snape.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Rubeus Hagrid",
+      "professor": "Care of Magical Creatures",
+      "bloodStatus":"Half-breed (half-human/half-giant)",
+      "house" : "Gryffindor",
+      "born" : "6 December 1928 Forest of Dean",
+      "patronus" : "-",
+      "boggart" : "Lord Voldemort",
+      "wand": "16\", oak",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Hagrid.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Filius Flitwick",
+      "professor": "Charms",
+      "bloodStatus":"Half-breed (part-human/part-goblin)",
+      "house" : "Ravenclaw",
+      "born" : "17 October in or before 1958",
+      "patronus" : "Non-corporeal",
+      "boggart" : "Lord Voldemort",
+      "wand": "Unknown length, wood and core",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Flitwick.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Pomona Sprout",
+      "professor": "Herbology",
+      "bloodStatus":"Pure-blood or half-blood",
+      "house" : "Hufflepuff",
+      "born" : "15 May",
+      "patronus" : "Non-corporeal",
+      "boggart" : "Lord Voldemort",
+      "wand": "Unknown length, wood and core",
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Sprout.jpg"
+    }
+  ]
+}

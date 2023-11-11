@@ -1,0 +1,102 @@
+{
+  "wand": [
+    {
+      "core": "Dragon Heartstring",
+      "wood": [
+        "Vine",
+        "Walnut",
+        "Hornbeam",
+        "Cherry",
+        "Elm",
+        "Fir",
+        "Chestnut",
+        "Birch",
+        "Cedar",
+        "Maple",
+        "Willow",
+        "Apple",
+        "Beech"
+      ],
+      "length": [
+        "10¾\"",
+        "12¾\"",
+        "10¼\"",
+        "9\"",
+        "9½\"",
+        "9¼\"",
+        "8\"",
+        "10\"",
+        "12½\""
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/DragonHeartstring.jpg"
+    },
+    {
+      "core": "Phoenix Feather",
+      "wood": [
+        "Holly",
+        "Yew",
+        "Whippy",
+        "Larch"
+      ],
+      "length": [
+        "11\"",
+        "13½\"",
+        "11½\"\"",
+        "10½\""
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/PhoenixFeather.jpg"
+    },
+    {
+      "core": "Unicorn Tail Hair",
+      "wood": [
+        "Cherry",
+        "Ash",
+        "Cypress",
+        "Hawthorn",
+        "Alder",
+        "Willow"
+      ],
+      "length": [
+        "8¾\"",
+        "12¼\"",
+        "10¼\"",
+        "10\"",
+        "9\"",
+        "9½\"",
+        "12\"",
+        "14\""
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/UnicornTailHair.jpg"
+    },
+    {
+      "core": "Veela Hair",
+      "wood": [
+        "Rosewood"
+      ],
+      "length": [
+        "9½\""
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/VeelaHair.jpg"
+    },
+    {
+      "core": "Thestral Tail Hair",
+      "wood": [
+        "Elder"
+      ],
+      "length": [
+        "15\""
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/ThestralTailHair.jpg"
+    },
+    {
+      "core": "Basilisk Horn",
+      "wood": [
+        "Snakewood"
+      ],
+      "length": [
+        "-"
+      ],
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/BasiliskHorn.jpg"
+    }
+  ]
+}
