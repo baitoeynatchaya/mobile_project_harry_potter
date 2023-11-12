@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:harry_potter/screens/page/hogwarts.dart';
 
 class Gryffindor extends StatefulWidget {
   const Gryffindor({super.key});
@@ -75,13 +74,77 @@ class _GryffindorState extends State<Gryffindor> {
                       ),
                     ),
                     Text(
-                      'name :',
+                      'founder :',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.sourceSans3(
                         color: Colors.white,
                         fontSize: 26.0,
                       ),
                     ),
+                      Text(
+                        'animal :',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.sourceSans3(
+                          color: Colors.white,
+                          fontSize: 26.0,
+                        ),
+                      ),
+                    Text(
+                      'houseColor :',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.sourceSans3(
+                        color: Colors.white,
+                        fontSize: 26.0,
+                      ),
+                    ),
+                    Text(
+                      'element :',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.sourceSans3(
+                        color: Colors.white,
+                        fontSize: 26.0,
+                      ),
+                    ),
+                    Text(
+                      'traits :',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.sourceSans3(
+                        color: Colors.white,
+                        fontSize: 26.0,
+                      ),
+                    ),Text(
+                      'head :',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.sourceSans3(
+                        color: Colors.white,
+                        fontSize: 26.0,
+                      ),
+                    ),
+                    Text(
+                      'ghost :',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.sourceSans3(
+                        color: Colors.white,
+                        fontSize: 26.0,
+                      ),
+                    ),
+                    Text(
+                      'commonRoom :',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.sourceSans3(
+                        color: Colors.white,
+                        fontSize: 26.0,
+                      ),
+                    ),
+                    Text(
+                      'magicalObjects :',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.sourceSans3(
+                        color: Colors.white,
+                        fontSize: 26.0,
+                      ),
+                    ),
+
                   ],
                 ),
               ),

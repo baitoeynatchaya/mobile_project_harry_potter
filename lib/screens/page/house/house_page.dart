@@ -1,9 +1,6 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:harry_potter/models/house.dart';
 import 'package:harry_potter/repositories/house_repositoriy.dart';
-import 'package:harry_potter/screens/page/hogwarts.dart';
 import 'package:harry_potter/screens/page/house/gryffindor.dart';
 import 'package:harry_potter/screens/page/house/hufflepuff.dart';
 import 'package:harry_potter/screens/page/house/ravenclaw.dart';
@@ -17,7 +14,6 @@ class HousePage extends StatefulWidget {
 }
 
 class _HousePageState extends State<HousePage> {
-  final _dio = Dio(BaseOptions(responseType: ResponseType.plain));
   List<House>? _houses;
   var _isLoading = false;
   String? _errorMessage;
@@ -52,50 +48,53 @@ class _HousePageState extends State<HousePage> {
   @override
   Widget build(BuildContext context) {
     buildSuccess() => Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Text(
-            'House',
-            style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 95.0,
-                color: Color(0xFFA609F3),
-                fontFamily: 'HarryPotter'),
-          ),
-          Row(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              createHouse(
-                  color: Color(0xFFA609F3),
-                  image: 'assets/image/G.jpg',
-                  page: Gryffindor()),
-              createHouse(
-                  color: Color(0xFFA609F3),
-                  image: 'assets/image/H.jpg',
-                  page: Hufflepuff()),
+              Text(
+                'House',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 95.0,
+                    color: Color(0xFFA609F3),
+                    fontFamily: 'HarryPotter'),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  createHouse(
+                      color: Color(0xFFA609F3),
+                      image: _houses![0].image,
+                      page: Gryffindor()),
+                  createHouse(
+                      color: Color(0xFFA609F3),
+                      image: _houses![1].image,
+                      page: Hufflepuff()),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  createHouse(
+                      color: Color(0xFFA609F3),
+                      image: _houses![2].image,
+                      page: Ravenclaw()),
+                  createHouse(
+                      color: Color(0xFFA609F3),
+                      image: _houses![3].image,
+                      page: Slytherin())
+                ],
+              ),
             ],
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              createHouse(
-                  color: Color(0xFFA609F3),
-                  image: 'assets/image/R.jpg',
-                  page: Ravenclaw()),
-              createHouse(
-                  color: Color(0xFFA609F3),
-                  image: 'assets/image/S.jpg',
-                  page: Slytherin())
-            ],
-          ),
-        ],
-      ),
-    );
+        );
 
     buildLoadingOverlay() => Container(
-        color: Colors.black.withOpacity(0.2),
-        child: Center(child: CircularProgressIndicator()));
+          color: Colors.black.withOpacity(0.2),
+          child: Center(
+            child: CircularProgressIndicator(),
+          ),
+        );
 
     buildError() => Center(
           child: Padding(
@@ -108,49 +107,56 @@ class _HousePageState extends State<HousePage> {
             ]),
           ),
         );
-
     return Scaffold(
       backgroundColor: Color(0xFF1B1828),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Text(
-              'House',
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 95.0,
-                  color: Color(0xFFA609F3),
-                  fontFamily: 'HarryPotter'),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                createHouse(
-                    color: Color(0xFFA609F3),
-                    image: 'assets/image/G.jpg',
-                    page: Gryffindor()),
-                createHouse(
-                    color: Color(0xFFA609F3),
-                    image: 'assets/image/H.jpg',
-                    page: Hufflepuff()),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                createHouse(
-                    color: Color(0xFFA609F3),
-                    image: 'assets/image/R.jpg',
-                    page: Ravenclaw()),
-                createHouse(
-                    color: Color(0xFFA609F3),
-                    image: 'assets/image/S.jpg',
-                    page: Slytherin())
-              ],
-            ),
-          ],
-        ),
+      body: Stack(
+        children: [
+          if (_houses?.isNotEmpty ?? false) buildSuccess(),
+          if (_errorMessage != null) buildError(),
+          if (_isLoading) buildLoadingOverlay()
+          // Center(
+          //   child: Column(
+          //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //     children: [
+          //       Text(
+          //         'House',
+          //         style: TextStyle(
+          //             fontWeight: FontWeight.bold,
+          //             fontSize: 95.0,
+          //             color: Color(0xFFA609F3),
+          //             fontFamily: 'HarryPotter'),
+          //       ),
+          //       Row(
+          //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //         children: [
+          //           createHouse(
+          //               color: Color(0xFFA609F3),
+          //               image: _houses![0].image,
+          //               page: Gryffindor()),
+          //           createHouse(
+          //               color: Color(0xFFA609F3),
+          //               image: _houses![1].image,
+          //               page: Hufflepuff()),
+          //         ],
+          //       ),
+          //       Row(
+          //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //         children: [
+          //           createHouse(
+          //               color: Color(0xFFA609F3),
+          //               image: _houses![2].image,
+          //               page: Ravenclaw()),
+          //           createHouse(
+          //               color: Color(0xFFA609F3),
+          //               image: _houses![3].image,
+          //               page: Slytherin())
+          //         ],
+          //       ),
+          //       Text(_houses![0].name)
+          //     ],
+          //   ),
+          // )
+        ],
       ),
     );
   }
@@ -174,7 +180,7 @@ class _HousePageState extends State<HousePage> {
               width: 3.0,
             ),
             shape: BoxShape.rectangle),
-        child: Image.asset(image, fit: BoxFit.cover, height: 250, width: 250),
+        child: Image.network(image, fit: BoxFit.cover, height: 250, width: 250),
       ),
     );
   }
