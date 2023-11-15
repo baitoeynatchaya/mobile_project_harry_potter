@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-class HouseApi{
+class ApiCaller{
   static final _dio = Dio(BaseOptions(responseType: ResponseType.plain));
   static const basePath = "http://localhost:3000";
   Future<String> get(String endpoint, {Map<String, dynamic>? params}) async {

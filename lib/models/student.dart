@@ -1,4 +1,3 @@
-import 'package:harry_potter/models/alsoKnownAs.dart';
 
 class Student {
   final int id;
@@ -6,7 +5,7 @@ class Student {
   final String bloodStatus;
   final String house;
   final String born;
-  final List<AlsoKnownAs> alsoKnownAss;
+  final List<String> alsoKnownAss;
   final String patronus;
   final String boggart;
   final String wand;
@@ -25,9 +24,9 @@ class Student {
     required this.image
   });
   factory Student.fromJson(Map<String,dynamic>json){
-    List<AlsoKnownAs> alsoKnownAss = [];
-    for (var alsoKnownAs in json['alsoKnownAss']) {
-      alsoKnownAss.add(AlsoKnownAs.fromJson(alsoKnownAs));
+    List<String> alsoKnownAss = [];
+    for (var alsoKnownAs in json['alsoKnownAs']) {
+      alsoKnownAss.add(alsoKnownAs);
     }
     return Student(
       id: json['id'],
@@ -40,7 +39,6 @@ class Student {
       boggart: json['boggart'],
       wand: json['wand'],
       image: json['image'],
-
     );
   }
 }

@@ -34,7 +34,7 @@ class _HousePageState extends State<HousePage> {
       var houses = await HouseRepository().getHouses();
       setState(() {
         _houses = houses;
-        debugPrint('Number of toilets: ${houses.length}');
+        debugPrint('Number of items: ${houses.length}');
       });
     } catch (e) {
       setState(() {
@@ -65,11 +65,11 @@ class _HousePageState extends State<HousePage> {
                   createHouse(
                       color: Color(0xFFA609F3),
                       image: _houses![0].image,
-                      page: Gryffindor()),
+                      page: Gryffindor(house: _houses![0],)),
                   createHouse(
                       color: Color(0xFFA609F3),
                       image: _houses![1].image,
-                      page: Hufflepuff()),
+                      page: Hufflepuff(house: _houses![1],)),
                 ],
               ),
               Row(
@@ -78,11 +78,11 @@ class _HousePageState extends State<HousePage> {
                   createHouse(
                       color: Color(0xFFA609F3),
                       image: _houses![2].image,
-                      page: Ravenclaw()),
+                      page: Ravenclaw(house: _houses![2],)),
                   createHouse(
                       color: Color(0xFFA609F3),
                       image: _houses![3].image,
-                      page: Slytherin())
+                      page: Slytherin(house: _houses![3],))
                 ],
               ),
             ],
@@ -114,48 +114,6 @@ class _HousePageState extends State<HousePage> {
           if (_houses?.isNotEmpty ?? false) buildSuccess(),
           if (_errorMessage != null) buildError(),
           if (_isLoading) buildLoadingOverlay()
-          // Center(
-          //   child: Column(
-          //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //     children: [
-          //       Text(
-          //         'House',
-          //         style: TextStyle(
-          //             fontWeight: FontWeight.bold,
-          //             fontSize: 95.0,
-          //             color: Color(0xFFA609F3),
-          //             fontFamily: 'HarryPotter'),
-          //       ),
-          //       Row(
-          //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //         children: [
-          //           createHouse(
-          //               color: Color(0xFFA609F3),
-          //               image: _houses![0].image,
-          //               page: Gryffindor()),
-          //           createHouse(
-          //               color: Color(0xFFA609F3),
-          //               image: _houses![1].image,
-          //               page: Hufflepuff()),
-          //         ],
-          //       ),
-          //       Row(
-          //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //         children: [
-          //           createHouse(
-          //               color: Color(0xFFA609F3),
-          //               image: _houses![2].image,
-          //               page: Ravenclaw()),
-          //           createHouse(
-          //               color: Color(0xFFA609F3),
-          //               image: _houses![3].image,
-          //               page: Slytherin())
-          //         ],
-          //       ),
-          //       Text(_houses![0].name)
-          //     ],
-          //   ),
-          // )
         ],
       ),
     );

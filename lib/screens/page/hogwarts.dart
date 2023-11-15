@@ -18,23 +18,37 @@ class _HogwartsState extends State<Hogwarts> {
     return Scaffold(
       backgroundColor: Color(0xFF1B1828),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(
-            child: Center(
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 30.0),
-                    child: Text(
-                      'Hogwarts',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 95.0,
-                          color: Color(0xFFA609F3),
-                          fontFamily: 'HarryPotter'),
-                    ),
+          Padding(
+            padding: const EdgeInsets.only(top: 15.0, left: 20.0),
+            child: SizedBox(
+              width: 40.0,
+              height: 40.0,
+              child: IconButton(
+                icon: Icon(Icons.arrow_back),
+                color: Color(0xFFA609F3),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ),
+          ),
+          Center(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 5.0),
+                  child: Text(
+                    'Hogwarts',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 95.0,
+                        color: Color(0xFFA609F3),
+                        fontFamily: 'HarryPotter'),
                   ),
-                  createTang(
+                ),
+                createTang(
                     name: 'House',
                     color: Color(0xFF500B17),
                     icon: Icon(
@@ -42,54 +56,47 @@ class _HogwartsState extends State<Hogwarts> {
                       color: Colors.white,
                       size: 35.0,
                     ),
-                    page: HousePage()
-                  ),
-                  createTang(
-                      name: 'Student',
-                      color: Color(0xFFB4A008),
-                      icon: Icon(
-                        Icons.border_color_outlined,
-                        color: Colors.white,
-                        size: 35.0,
-                      ),
-                      page: StudentSearch()
-                  ),
-                  createTang(
-                      name: 'Professor',
-                      color: Color(0xFF1C255D),
-                      icon: Icon(
-                        Icons.people_rounded,
-                        color: Colors.white,
-                        size: 35.0,
-                      ),
-                      page: ProfessorSearch()
-                  ),
-                  createTang(
-                      name: 'Wand Woods',
-                      color: Color(0xFF0A2601),
-                      icon: Icon(
-                        Icons.bolt_outlined,
-                        color: Colors.white,
-                        size: 35.0,
-                      ),
-                      page: WandWoodsSearch()
-                  ),
-                ],
-              ),
+                    page: HousePage()),
+                createTang(
+                    name: 'Student',
+                    color: Color(0xFFCCBD4E),
+                    icon: Icon(
+                      Icons.border_color_outlined,
+                      color: Colors.white,
+                      size: 35.0,
+                    ),
+                    page: StudentSearch()),
+                createTang(
+                    name: 'Professor',
+                    color: Color(0xFF1C255D),
+                    icon: Icon(
+                      Icons.people_rounded,
+                      color: Colors.white,
+                      size: 35.0,
+                    ),
+                    page: ProfessorSearch()),
+                createTang(
+                    name: 'Wand Woods',
+                    color: Color(0xFF0A2601),
+                    icon: Icon(
+                      Icons.bolt_outlined,
+                      color: Colors.white,
+                      size: 35.0,
+                    ),
+                    page: WandWoodsSearch()),
+              ],
             ),
           ),
-          //),
         ],
       ),
     );
   }
 
-  Widget createTang({
-    required String name,
-    required Color color,
-    required Icon icon,
-    dynamic page
-  }) {
+  Widget createTang(
+      {required String name,
+      required Color color,
+      required Icon icon,
+      dynamic page}) {
     return Padding(
       padding: const EdgeInsets.only(top: 45.0),
       child: SizedBox(
@@ -99,7 +106,7 @@ class _HogwartsState extends State<Hogwarts> {
           onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) =>page,
+                builder: (context) => page,
               ),
             );
           },

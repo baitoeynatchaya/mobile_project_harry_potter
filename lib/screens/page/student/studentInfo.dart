@@ -1,38 +1,39 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../models/house.dart';
+import '../../../models/student.dart';
 
-class Slytherin extends StatefulWidget {
-  final House house;
-  const Slytherin({super.key, required this.house});
+class StudentInfo extends StatefulWidget {
+  final Student student;
+  const StudentInfo({super.key, required this.student});
 
   @override
-  State<Slytherin> createState() => _SlytherinState();
+  State<StudentInfo> createState() => _StudentInfoState();
 }
 
-class _SlytherinState extends State<Slytherin> {
-  House? house;
+class _StudentInfoState extends State<StudentInfo> {
+  Student? student;
+
   void initState() {
     super.initState();
-    house = widget.house;
+    student = widget.student;
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF0A2601),
+      backgroundColor: Color(0xFF1B1828),
       body: Column(
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 25.0),
             child: Center(
               child: Text(
-                '${house!.name}',
+                student!.name,
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 85.0,
-                    color: Color(0xFFc0c0c0),
+                    color: Color(0xFFA609F3),
                     fontFamily: 'HarryPotter'),
               ),
             ),
@@ -42,11 +43,11 @@ class _SlytherinState extends State<Slytherin> {
             width: 250,
             decoration: BoxDecoration(
                 border: Border.all(
-                  color: Color(0xFFc0c0c0),
+                  color: Color(0xFFA609F3),
                   width: 3.0,
                 ),
                 shape: BoxShape.rectangle),
-            child: Image.network(house!.image,
+            child: Image.network(student!.image,
                 fit: BoxFit.cover, height: 250, width: 250),
           ),
           Expanded(
@@ -58,20 +59,21 @@ class _SlytherinState extends State<Slytherin> {
                   height: 300.0,
                   decoration: BoxDecoration(
                       border: Border.all(
-                        color: Color(0xFFc0c0c0),
+                        color: Color(0xFFA609F3),
                         width: 3.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                       shape: BoxShape.rectangle),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
-                        'House information',
+                        'Student Information',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.sourceSans3(
-                          color: Colors.white,
                           fontWeight: FontWeight.bold,
+                          color: Colors.white,
                           fontSize: 20.0,
                         ),
                       ),
@@ -79,11 +81,11 @@ class _SlytherinState extends State<Slytherin> {
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 20.0,right:15.0 ),
-                            child: Icon(Icons.school,
+                            child: Icon(Icons.near_me,
                               color:Colors.white,),
                           ),
                           Text(
-                            'Founder :  ${house!.founder}',
+                            'Name :  ${student!.name}',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.sourceSans3(
                               color: Colors.white,
@@ -96,11 +98,11 @@ class _SlytherinState extends State<Slytherin> {
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 20.0,right:15.0 ),
-                            child: Icon(Icons.pets,
+                            child: Icon(Icons.bloodtype,
                               color:Colors.white,),
                           ),
                           Text(
-                            'Animal :  ${house!.animal}',
+                            'Blood Status :  ${student!.bloodStatus}',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.sourceSans3(
                               color: Colors.white,
@@ -113,11 +115,11 @@ class _SlytherinState extends State<Slytherin> {
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 20.0,right:15.0 ),
-                            child: Icon(Icons.color_lens,
+                            child: Icon(Icons.stadium_rounded,
                               color:Colors.white,),
                           ),
                           Text(
-                            'House Color :  ${house!.houseColor}',
+                            'House :  ${student!.house}',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.sourceSans3(
                               color: Colors.white,
@@ -130,11 +132,11 @@ class _SlytherinState extends State<Slytherin> {
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 20.0,right:15.0 ),
-                            child: Icon(Icons.water_drop,
+                            child: Icon(Icons.bathtub,
                               color:Colors.white,),
                           ),
                           Text(
-                            'Element :  ${house!.element}',
+                            'Born :  ${student!.born}',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.sourceSans3(
                               color: Colors.white,
@@ -147,11 +149,11 @@ class _SlytherinState extends State<Slytherin> {
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 20.0,right:15.0 ),
-                            child: Icon(Icons.recommend,
+                            child: Icon(Icons.spatial_audio,
                               color:Colors.white,),
                           ),
                           Text(
-                            'Traits :  ${house!.traits}',
+                            'Also Known As :  ${student!.alsoKnownAss}',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.sourceSans3(
                               color: Colors.white,
@@ -163,11 +165,11 @@ class _SlytherinState extends State<Slytherin> {
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 20.0,right:15.0 ),
-                            child: Icon(Icons.handshake_rounded,
+                            child: Icon(Icons.favorite_border,
                               color:Colors.white,),
                           ),
                           Text(
-                            'Head :  ${house!.head}',
+                            'Patronus :  ${student!.patronus}',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.sourceSans3(
                               color: Colors.white,
@@ -180,11 +182,11 @@ class _SlytherinState extends State<Slytherin> {
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 20.0,right:15.0 ),
-                            child: Icon(Icons.gpp_maybe,
+                            child: Icon(Icons.gpp_bad_rounded,
                               color:Colors.white,),
                           ),
                           Text(
-                            'Ghost :  ${house!.ghost}',
+                            'Boggart :  ${student!.boggart}',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.sourceSans3(
                               color: Colors.white,
@@ -197,28 +199,11 @@ class _SlytherinState extends State<Slytherin> {
                         children: [
                           Padding(
                             padding: EdgeInsets.only(left: 20.0,right:15.0 ),
-                            child: Icon(Icons.location_on,
+                            child: Icon(Icons.stacked_line_chart,
                               color:Colors.white,),
                           ),
                           Text(
-                            'Common Room :  ${house!.commonRoom}',
-                            textAlign: TextAlign.center,
-                            style: GoogleFonts.sourceSans3(
-                              color: Colors.white,
-                              fontSize: 17.0,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(left: 20.0,right:15.0 ),
-                            child: Icon(Icons.dark_mode_outlined,
-                              color:Colors.white,),
-                          ),
-                          Text(
-                            'Magical Objects :  ${house!.magicalObjects}',
+                            'Wand :  ${student!.wand}',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.sourceSans3(
                               color: Colors.white,

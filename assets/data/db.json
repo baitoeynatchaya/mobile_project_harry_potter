@@ -76,7 +76,7 @@
   "professor": [
     {
       "id": 1,
-      "name": "Albus Percival Wulfric Brian Dumbledore",
+      "name": "Albus Dumbledore",
       "professor": "Headmaster",
       "bloodStatus":"Half-blood",
       "house" : "Gryffindor",
@@ -84,7 +84,7 @@
       "patronus" : "Phoenix",
       "boggart" : "The corpse of his sister, Ariana",
       "wand": "15\", Elder, Thestral tail hair core",
-      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Dumbledore.jpg"
+      "image": "https://t1.blockdit.com/photos/2021/01/60013f970841350c7689d874_800x0xcover_0Z8YDn85.jpg"
     },
     {
       "id": 2,
@@ -109,7 +109,7 @@
       "patronus" : "Doe",
       "boggart" : "Lord Voldemort",
       "wand": "Unknown length, wood and core",
-      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Snape.jpg"
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/snape-facts-12.jpg"
     },
     {
       "id": 4,
@@ -145,7 +145,7 @@
       "patronus" : "Non-corporeal",
       "boggart" : "Lord Voldemort",
       "wand": "Unknown length, wood and core",
-      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/Sprout.jpg"
+      "image": "https://static.independent.co.uk/2022/04/27/11/newFile-3.jpg?width=1200"
     }
   ],
   "student": [
@@ -209,7 +209,7 @@
     },
     {
       "id": 5,
-      "name": "Luna Scamander (née Lovegood)",
+      "name": "Luna Scamander",
       "bloodStatus":"Pure-blood or half-blood",
       "house" : "Ravenclaw",
       "born" : "13 February 1981 Great Britain",
@@ -246,7 +246,7 @@
         "Cherry",
         "Elm",
         "Fir",
-        "Chestnut",
+        "\nChestnut",
         "Birch",
         "Cedar",
         "Maple",
@@ -293,6 +293,8 @@
         "Alder",
         "Willow"
       ],
+
+      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/UnicornTailHair.jpg",
       "length": [
         "8¾\"",
         "12¼\"",
@@ -302,8 +304,7 @@
         "9½\"",
         "12\"",
         "14\""
-      ],
-      "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/UnicornTailHair.jpg"
+      ]
     },
     {
       "core": "Veela Hair",
