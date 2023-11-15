@@ -14,4 +14,14 @@ class WandRepository{
       rethrow;
     }
   }
+
+  Future<void> addWand(
+      {required String core, required String wood,required String length,required String image}) async {
+    try {
+      await ApiCaller()
+          .post('wand', params: {'core': core, 'wood': wood,'length':length,'image':image});
+    } catch (e) {
+      rethrow;
+    }
+  }
 }

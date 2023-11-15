@@ -13,4 +13,14 @@ class ApiCaller{
       rethrow;
     }
   }
+
+  Future<String> post(String endpoint,
+      {required Map<String, dynamic>? params}) async {
+    try {
+      final response = await _dio.post('$basePath/$endpoint', data: params);
+      return response.data.toString();
+    } catch (e) {
+      rethrow;
+    }
+  }
 }
