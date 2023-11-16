@@ -48,7 +48,7 @@ class _HogwartsState extends State<Hogwarts> {
                         fontFamily: 'HarryPotter'),
                   ),
                 ),
-                createTang(
+                createCard(
                     name: 'House',
                     color: Color(0xFF500B17),
                     icon: Icon(
@@ -57,7 +57,7 @@ class _HogwartsState extends State<Hogwarts> {
                       size: 35.0,
                     ),
                     page: HousePage()),
-                createTang(
+                createCard(
                     name: 'Student',
                     color: Color(0xFFCCBD4E),
                     icon: Icon(
@@ -66,7 +66,7 @@ class _HogwartsState extends State<Hogwarts> {
                       size: 35.0,
                     ),
                     page: StudentSearch()),
-                createTang(
+                createCard(
                     name: 'Professor',
                     color: Color(0xFF1C255D),
                     icon: Icon(
@@ -75,7 +75,7 @@ class _HogwartsState extends State<Hogwarts> {
                       size: 35.0,
                     ),
                     page: ProfessorSearch()),
-                createTang(
+                createCard(
                     name: 'Wand Woods',
                     color: Color(0xFF0A2601),
                     icon: Icon(
@@ -92,7 +92,7 @@ class _HogwartsState extends State<Hogwarts> {
     );
   }
 
-  Widget createTang(
+  Widget createCard(
       {required String name,
       required Color color,
       required Icon icon,

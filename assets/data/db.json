@@ -276,6 +276,13 @@
       "wood": "Snakewood",
       "length": "-",
       "image": "https://raw.githubusercontent.com/baitoeynatchaya/testImage/main/BasiliskHorn.jpg"
+    },
+    {
+      "core": "hog",
+      "wood": "wart",
+      "length": "12\"",
+      "image": "https://png.pngtree.com/png-vector/20190802/ourlarge/pngtree-magic-wand-icon-png-image_1652859.jpg",
+      "id": 7
     }
   ]
 }

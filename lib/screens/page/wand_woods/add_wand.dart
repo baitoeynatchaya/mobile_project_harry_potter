@@ -85,13 +85,14 @@ class _AddWandPageState extends State<AddWandPage> {
                   child: TextField(
                     controller: _coreController,
                     decoration: InputDecoration(
-                      hintText: 'Core',
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.greenAccent,
-                        ),
+                      labelText: 'Core',
+                      labelStyle: TextStyle(color: Color(0xFF9D8AA6)),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Color(0xFFA609F3)),
                       ),
+                      hintStyle: TextStyle(color: Colors.grey),
                     ),
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
                 Padding(
@@ -99,13 +100,14 @@ class _AddWandPageState extends State<AddWandPage> {
                   child: TextField(
                     controller: _woodController,
                     decoration: InputDecoration(
-                      hintText: 'Wood',
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.greenAccent,
-                        ),
+                      labelText: 'Wood',
+                      labelStyle: TextStyle(color: Color(0xFF9D8AA6)),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Color(0xFFA609F3)),
                       ),
+                      hintStyle: TextStyle(color: Colors.grey),
                     ),
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
                 Padding(
@@ -113,26 +115,37 @@ class _AddWandPageState extends State<AddWandPage> {
                   child: TextField(
                     controller: _lengthController,
                     decoration: InputDecoration(
-                      hintText: 'Length',
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.greenAccent,
-                        ),
+                      labelText: 'Length',
+                      labelStyle: TextStyle(color: Color(0xFF9D8AA6)),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Color(0xFFA609F3)),
                       ),
+                      hintStyle: TextStyle(color: Colors.grey),
                     ),
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
                 Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: ElevatedButton(
                       onPressed: handleClickSave,
-                      child: Text('SAVE'),
-                    ))
+                      child: Text('Add Wand',style:
+                      TextStyle(color: Colors.white),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xFFA609F3),
+                    ),
+                ),
+                ),
               ],
             )));
 
     return Scaffold(
-        appBar: AppBar(title: Text('ADD WAND')),
+        backgroundColor: Color(0xFF1B1828),
+        appBar: AppBar(title: Text('',style: TextStyle(
+          color: Colors.white
+          ),
+        ),backgroundColor:Color(0xFFA609F3),),
         body: Stack(
           children: [
             buildForm(),

@@ -8,8 +8,6 @@ class ApiCaller{
       final response = await _dio.get('$basePath/$endpoint', queryParameters: params);
       return response.data.toString();
     } catch (e) {
-      // TODO:
-      print(e);
       rethrow;
     }
   }
